@@ -1,0 +1,24 @@
+main {
+    display: flex;
+    border: 2px solid #333;
+    padding: 10px;
+    margin: 20px;
+    height: 150px;
+    width: 600px;
+}
+
+.item {
+    background-color: #4caf50;
+    color: #fff;
+    padding: 20px;
+    margin: 5px;
+    text-align: center;
+    font-size: 1rem;
+    flex-basis: 250px; /* tamanho inicial de cada item*/
+
+}
+
+/* valores distintos de flex-shrink*/
+.item-1 {flex-shrink: 1;}
+.item-2 {flex-shrink: 0;}
+.item-3 {flex-shrink: 2;}
