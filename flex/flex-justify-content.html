@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="flex-justify=content.css">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Exemplo de justify-content</h1>
+    ´<p>
+        <span class="negrito">O que é justify-content</span> É a propriedade que determina como itens em um container flex são distribuidos ao longo do eixo principal, se o eixo principal for horizontal (padrão para <code>flex=direction: row</code> ), os itens são alinhados horizontalmente de diferentes formas, dependendo do valor escolhido.
+    </p>
+
+    <section>
+        <h2>justify-content: flex-start</h2>
+        <p>
+            <span class="negrito">Descrição</span> Os itens são colocados no início do container (lado esquerdo, no caso da direção em linha)
+        </p>
+
+        <div class="container flex-start">
+            <div class="item">Item 1</div>
+            <div class="item">Item 2</div>
+            <div class="item">Item 3</div>
+        </div>
+    </section>
+
+    <section>
+        <h2>justify-content: flex-end</h2>
+        <p>
+            <span class="negrito">Descrição</span> Os itens são colocados no final do contêiner (lado direito, no caso de direção em linha)
+        </p>
+
+        <div class="container flex-end">
+            <div class="item">Item 1</div>
+            <div class="item">Item 2</div>
+            <div class="item">Item 3</div>
+        </div>
+    </section>
+
+    <section></section>
+        <h2>justify-content: center</h2>
+        <p>
+            <span class="negrito">Descrição</span> Os itens são centralizados ao longo do eixo principal
+        </p>
+
+        <div class="container center">
+            <div class="item">Item 1</div>
+            <div class="item">Item 2</div>
+            <div class="item">Item 3</div>
+        </div>
+    </section>
+
+    <section></section>
+        <h2>justify-content: space-between</h2>
+        <p>
+            <span class="negrito">Descrição</span> Os itens são distribuidos com o maximo de espaco entre eles, sem espaço nas extremidades.
+        </p>
+
+        <div class="container space-between">
+            <img class="logo" src="../CSS3_logo_and_wordmark.svg.png" alt="">
+            <nav class="navbar">
+                <ul>
+                    <li><a href="@">Home</a></li>
+                    <li><a href="@">Suporte</a></li>
+                </ul>
+            </nav>
+            <div class="item">Item 2</div>
+            <div class="item">Item 3</div>
+        </div>
+    </section>
+
+    <section></section>
+        <h2>justify-content: space-around</h2>
+        <p>
+            <span class="negrito">Descrição</span> Os itens são distribuidos de forma que haja espaço igual em torno de cada item(incluido as extremidades).
+        </p>
+
+        <div class="container space-around">
+            <div class="item">Item 1</div>
+            <div class="item">Item 2</div>
+            <div class="item">Item 3</div>
+        </div>
+    </section>
+
+    <section></section>
+        <h2>justify-content: space-evenly</h2>
+        <p>
+            <span class="negrito">Descrição</span> Os itens são distribuidos igualmente, com espaçps iguais entre si e nas extremidades do contêiner
+        </p>
+
+        <div class="container space-evenly">
+            <div class="item">Item 1</div>
+            <div class="item">Item 2</div>
+            <div class="item">Item 3</div>
+        </div>
+    </section>
+</body>
+</html>

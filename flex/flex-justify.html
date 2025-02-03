@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style=flex-start.css">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Exemplo de justify-content</h1>
+    <p>
+        <span class="negrito">O que é juntify-content</span> É a propriedade que determina como os itens em um container flex são distribuidos ao lingo do eixo principal. Se o eixo principal for horizontal (padrão para <code>flex-direction: row</code> ), os itens são alinhados horizontalmente de diferentes formas, dependendo do valor escolhido.
+    </p>
+
+    <section>
+        <h2>justify-content: flex-start</h2>
+        <p>
+            <span class="negrito">Descrição</span> Os itens são colocados do container(lado esquerdo, no caso de direção em linha.)
+        </p>
+
+        <div class="container flex-start">
+            <div class="item">Item 1</div>
+            <div class="item">Item 2</div>
+            <div class="item">Item 3</div>
+
+        </div>
+    </section>
+
+    <section>
+        <h2>justify-content: flex-end</h2>
+        <p>
+            <span class="negrito">Descrição</span> Alinha os itens ao final do contêiner (parte inferior, no caso de um eixo horizontal principal)
+        </p>
+
+        <div class="container flex-end">
+            <div class="item">Item 1</div>
+            <div class="item">Item 2</div>
+            <div class="item">Item 3</div>
+
+        </div>
+    </section>
+
+    <section>
+        <h2>justify-content: flex-center</h2>
+        <p>
+            <span class="negrito">Descrição</span> Alinha os itens ao centro do eixo vertical
+        </p>
+
+        <div class="container center">
+            <div class="item">Item 1</div>
+            <div class="item">Item 2</div>
+            <div class="item">Item 3</div>
+
+        </div>
+    </section>
+
+    <section>
+        <h2>justify-content: flex-baseline</h2>
+        <p>
+            <span class="negrito">Descrição</span> Alinha os itens pela linha de base do texto (útil quando os itens têm tamanhos de fontes diferentes)
+        </p>
+
+        <div class="container baseline">
+            <div class="item">Item 1</div>
+            <div class="item">Item 2</div>
+            <div class="item">Item 3</div>
+
+        </div>
+    </section>
+
+    <section>
+        <h2>justify-content: flex-stretch</h2>
+        <p>
+            <span class="negrito">Descrição</span> Os itens se esticam para preencher todos o espaço disponivel no eixo transversal(desde que nenhum valor fixo de altura seja definido para o item)
+        </p>
+
+        <div class="container stretch">
+            <div class="item">Item 1</div>
+            <div class="item">Item 2</div>
+            <div class="item">Item 3</div>
+
+        </div>
+    </section>
+</body>
+</html>

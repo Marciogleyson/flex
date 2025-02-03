@@ -1,0 +1,34 @@
+.negrito {
+    font-weight: bold;
+}
+
+.container {
+    display: flex;
+    border: 2px solid #333;
+    padding: 10px;
+    margin: 20px;
+    width: 500px;
+    min-height: 100px;
+}
+
+.item {
+    background-color: #4caf50;
+    color: #fff;
+    padding: 20px;
+    margin: 5px;
+    text-align: center;
+    font-size: 1rem;
+    flex: 0 0 150px; /* Cada item tem 150px de largura fixa */
+}
+
+.no-wrap {
+    flex-wrap: nowrap; /* (padrão) não quebra a linha quando ultrapadda o tamanho disponiveç */
+}
+
+.wrap {
+    flex-wrap: wrap; /* quebra a linha quando ultrapassa o tamanho disponivel */
+}
+
+.wrap-reverse {
+    flex-wrap: wrap-reverse; /*Quebra a linha ultrapassando o tamanho disponivel, porém inverte a ondem dos elementos, apresentados do ulyimo para o primeiro*/
+}

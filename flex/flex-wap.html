@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt=br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style-wap.css">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Exemplos de flex-wap</h1>
+    <p>Define se os itens devem "quebrar" para uma nova linha/coluna quando não houver espaço disponível no eixo principal.</p>
+
+    <section>
+        <h2>flex-wap: nowrap</h2>
+
+        <p>
+            <span class="negrito">Descrição:</span> Os itens não quebram para a próxima linha. Se  a soma das larguras  for maior que a do container, surgirá um barra de rolagem horizontal.
+        </p>
+
+        <div class="container no-wap"> /* cada item tem 150pc de largura fixa*/
+            <div class="item">Items 1</div>
+            <div class="item">Items 2</div>
+            <div class="item">Items 3</div>
+            <div class="item">Items 4</div>
+            <div class="item">Items 5</div>
+        </div>
+    </section>
+
+    <section>
+        <h2>flex-wap: wrap</h2>
+
+        <p>
+            <span class="negrito">Descrição:</span> Os itens  quebram para uma nova linha. Sempre que não houver espaço disponivel.
+        </p>
+
+        <div class="container wrap">
+            <div class="item">Items 1</div>
+            <div class="item">Items 2</div>
+            <div class="item">Items 3</div>
+            <div class="item">Items 4</div>
+            <div class="item">Items 5</div>
+        </div>
+    </section>
+
+    <section>
+        <h2>flex-wap: wrap-reverse</h2>
+
+        <p>
+            <span class="negrito">Descrição:</span> Os itens  quebram para uma nova linha. Sempre que não houver mais espaço disponivel, porém invertido a direção das linhas.
+        </p>
+
+        <div class="container wrap-reverse">
+            <div class="item">Items 1</div>
+            <div class="item">Items 2</div>
+            <div class="item">Items 3</div>
+            <div class="item">Items 4</div>
+            <div class="item">Items 5</div>
+        </div>
+    </section>
+</body>
+</html>
