@@ -15,6 +15,7 @@ body {
     padding: 2rem;
     border-radius: 8px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 10px;
 }
 
 .pulse {
@@ -87,4 +88,31 @@ body {
         transform: scale(0.95);
         color: green;
     }
+}
+
+.hover-card {
+    width: 200px;
+    height: 200px;
+    background-color: #1e90ff;
+    transition: all0.3s ease;
+
+}
+
+.hover-card:hover{
+    transform: translateY(-10px);
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+}
+
+.text-slide{
+    width: 300px;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 2px solid #000;
+    animation: escrevendo 3s steps(40) infinite;
+}
+
+@keyframes escrevendo {
+    0%{width: 0;}
+    50%{width: 300px;}
+    100%{width: 0px;}
 }
