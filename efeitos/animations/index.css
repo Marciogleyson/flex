@@ -32,6 +32,33 @@ body {
 
 }
 
+.cube {
+    width: 100px;
+    height: 100px;
+    background-color: #2ed573;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: rotate 4s linear infinite;
+}
+
+@keyframes rotate {
+    0%{transform: rotate(0deg);}
+    100%{transform: rotate(360deg);}
+}
+
+.inner-cube{
+    width: 50px;
+    height: 50px;
+    background-color: aqua;
+    animation: rotate-inverse 1s linear infinite;
+}
+
+@keyframes rotate-inverse {
+    0%{transform: rotate(360deg);}
+    100%{transform: 90deg;}
+}
+
 .pulse span {
     user-select: none;
 }
